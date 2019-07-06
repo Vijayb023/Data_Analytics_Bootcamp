@@ -37,10 +37,14 @@ with open(BudgetDatacsv, newline="") as csvfile:
         average_profit = (change_profit/total_months)
 
         greatest_increase = max(changes)
-        greatest_decrease = min(changes)
-
         Date_increase = date[changes.index(greatest_increase)]
+
+
+        greatest_decrease = min(changes)
         Date_decrease = date[changes.index(greatest_decrease)]
+
+        
+       
 
 
     print("----------------------------------------------------------")

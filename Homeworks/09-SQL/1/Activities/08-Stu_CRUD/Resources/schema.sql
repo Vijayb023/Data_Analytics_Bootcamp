@@ -1,23 +1,10 @@
--- Drop table if exists
-DROP TABLE firepower;
+drop table if exists players;
+drop table if exists matches;
 
--- Create new table to import data
-CREATE TABLE firepower (
-	country VARCHAR,
-	ISO3 VARCHAR,
-	rank INT,
-	TotalPopulation INT,
-	ManpowerAvailable INT,
-	TotalMilitaryPersonnel INT,
-	ActivePersonnel INT,
-	ReservePersonnel INT,
-	TotalAircraftStrength INT,
-	FighterAircraft INT,
-	AttackAircraft INT,
-	TotalHelicopterStrength INT,
-	AttackHelicopters INT
+create table players(
+    player_id int,
+	first_name varchar,
+	last_name varchar,
+	hand varchar,
+    country_code varchar
 );
-
--- Import data from firepower.csv
--- View the table to ensure all data has been imported correctly
-SELECT * FROM firepower;

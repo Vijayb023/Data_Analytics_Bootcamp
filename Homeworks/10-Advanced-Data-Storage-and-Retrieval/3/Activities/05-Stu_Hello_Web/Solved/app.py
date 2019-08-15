@@ -14,15 +14,15 @@ def index():
 
 @app.route("/about")
 def about():
-    name = "Peleke"
-    location = "Tien Shan"
+    name = "Vijay"
+    location = "Atlanta"
 
     return f"My name is {name}, and I live in {location}."
 
 
 @app.route("/contact")
 def contact():
-    email = "peleke@example.com"
+    email = "Vijaypb024@gmail.com"
 
     return f"Questions? Comments? Complaints? Shoot an email to {email}."
 

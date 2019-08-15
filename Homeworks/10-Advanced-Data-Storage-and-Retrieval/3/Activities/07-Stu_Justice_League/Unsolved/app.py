@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-
+app = Flask(__name__)
 # Dictionary of Justice League
 justice_league_members = [
     {"superhero": "Aquaman", "real_name": "Arthur Curry"},
@@ -10,20 +10,16 @@ justice_league_members = [
     {"superhero": "Superman", "real_name": "Clark Kent/Kal-El"},
     {"superhero": "Wonder Woman", "real_name": "Princess Diana"}
 ]
+@app.route("/")
+def home():
+    return "Welcome to the justice league"
 
-#################################################
-# Flask Setup
-#################################################
-# @TODO: Initialize your Flask app here
-# YOUR CODE GOES HERE
-
-#################################################
-# Flask Routes
-#################################################
-
-# @TODO: Complete the routes for your app here
-# YOUR CODE GOES HERE
+@app.route("/mem")
+def members():
+   return jsonify(justice_league_members)
 
 if __name__ == "__main__":
     # @TODO: Create your app.run statement here
     # YOUR CODE GOES HERE
+    app.run(debug=True)
+

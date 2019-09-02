@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<div class="navbar">
+        <a href="index.html">Home</a>
+        <div class= "move">
+        <a href="visualization.html">Data</a>
+        <a href="comparison.html">Comparison</a>
+        <div class="dropdown">
+          <button class="dropbtn">Plots
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Max Temperature</a>
+            <a href="#">Humidity</a>
+            <a href="#">Cloudiness</a>
+            <a href="#">Wind</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+<body >
+        <div class="container">
+      <h1>Summary for Weather Py </h1>
+      <div id="img">
+      <img src="Resources/assets/images/Fig2.png"  width="500px" >
+      </div>
+      <p>In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.</P>
+      <br>
+      <p>Your objective is to build a series of scatter plots to showcase the following relationships:</p>
+      
+      <li>Temperature (F) vs. Latitude</li>
+      <li>Humidity (%) vs. Latitude</li>
+      <li>Cloudiness (%) vs. Latitude</li>
+      <li>Wind Speed (mph) vs. Latitude</li>
+      <li>Your final notebook must:</li>
+      
+      <p>Randomly select at least 500 unique (non-repeat) cities based on latitude and longitude.
+      Perform a weather check on each of the cities using a series of successive API calls.
+      Include a print log of each city as it's being processed with the city number and city name.
+      Save both a CSV of all data retrieved and png images for each scatter plot.
+      As final considerations:</p>
+      
+      <li>You must complete your analysis using a Jupyter notebook.</li>
+      <li>You must use the Matplotlib or Pandas plotting libraries.</li>
+      <li>You must include a written description of three observable trends based on the data.</li>
+      <li>You must use proper labeling of your plots, including aspects like: Plot Titles (with date of analysis) and Axes Labels.</li>
+      </div>
+      <section id="graphs">
+       <a href="fig1.html"> <img src="Resources/assets/images/Fig1.png"  width="400px" href="Fig1"></a>
+       <a href="fig2.html"> <img src="Resources/assets/images/Fig2.png"  width="400px" href="Fig2"></a>
+       <a href="fig3.html"> <img src="Resources/assets/images/Fig3.png"  width="400px" href="Fig2"></a>
+       <a href="fig4.html"> <img src="Resources/assets/images/Fig4.png"  width="400px" href="Fig3"></a>
+      
+      
+      </section>
+      </body>
+      
+      <Footer class="footer">
+        <p>Copyright Vijay Bagavatula</p>
+      </Footer>
+</html>

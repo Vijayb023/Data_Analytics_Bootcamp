@@ -14,7 +14,7 @@
     always: 1,
     am: 1,
     and: 1,
-    be: 1,
+    be: 1
     what: 2,
     will: 1,
     yam: 3

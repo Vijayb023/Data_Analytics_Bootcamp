@@ -1,6 +1,6 @@
 function init() {
   var data = [{
-    values: [1, 2, 3, 39],
+    values: [91, 2, 3, 30],
     labels: ["Spotify", "Soundcloud", "Pandora", "Itunes"],
     type: "pie"
   }];
@@ -22,10 +22,10 @@ function getData(dataset) {
   var data = [];
   switch (dataset) {
   case "dataset1":
-    data = [1, 2, 3, 39];
+    data = [77, 222, 33, 349];
     break;
   case "dataset2":
-    data = [10, 20, 30, 37];
+    data = [10, 20, 308, 379];
     break;
   case "dataset3":
     data = [100, 200, 300, 23];

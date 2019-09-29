@@ -65,7 +65,7 @@ def pals():
     results = db.session.query(Pet.type, func.count(Pet.type)).group_by(Pet.type).all()
 
     pet_type = [result[0] for result in results]
-    age = [result[1] for result in results]
+    age = [result[0] for result in results]
 
     trace = {
         "x": pet_type,

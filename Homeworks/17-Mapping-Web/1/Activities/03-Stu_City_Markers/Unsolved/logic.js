@@ -12,12 +12,4 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: API_KEY
 }).addTo(myMap);
 
-// City markers
-
-// Add code to create a marker for each city below and add it to the map
-
-// newyork;
-// chicago;
-// houston;
-// la;
-// omaha;
+ 

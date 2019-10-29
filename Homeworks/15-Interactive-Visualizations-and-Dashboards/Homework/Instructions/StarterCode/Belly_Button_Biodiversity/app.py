@@ -41,11 +41,9 @@ def index():
 def names():
     """Return a list of sample names."""
 
-    # Use Pandas to perform the sql query
     stmt = db.session.query(Samples).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 
-    # Return a list of the column names (sample names)
     return jsonify(list(df.columns)[2:])
 
 
@@ -85,14 +83,10 @@ def samples(sample):
     stmt = db.session.query(Samples).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 
-    # Filter the data based on the sample number and
-    # only keep rows with values above 1
     sample_data = df.loc[df[sample] > 1, ["otu_id", "otu_label", sample]]
 
-    # Sort by sample
     sample_data.sort_values(by=sample, ascending=False, inplace=True)
 
-    # Format the data to send as json
     data = {
         "otu_ids": sample_data.otu_id.values.tolist(),
         "sample_values": sample_data[sample].values.tolist(),
